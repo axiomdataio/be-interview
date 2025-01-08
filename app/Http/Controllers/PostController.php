@@ -34,9 +34,8 @@ class PostController extends Controller
             $request->validated()
         );
 
-        return $post;
+        return PostResource::make($post);
     }
-
 
     /**
      * Display the specified resource.
